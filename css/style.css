@@ -231,12 +231,12 @@ body._touch .menu__list > li._active .menu__arrow {
 		transform: scale(0) translate(0px, -50%);
 	}
 	.menu__icon._active::before {
-		top: 50%;
-		transform: rotate(-45deg) translate(0px, -50%);
+		top: calc(50% - 1px);
+		transform: rotate(-45deg);
 	}
 	.menu__icon._active::after {
-		bottom: 50%;
-		transform: rotate(45deg) translate(0px, 50%);
+    bottom: calc(50% - 1px);
+		transform: rotate(45deg);
 	}
 	.menu__body {
 		position: fixed;
